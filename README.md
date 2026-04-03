@@ -11,7 +11,7 @@ The release ZIP contains:
 - **dokan2.dll** (required, must be in the same folder as the exe)
 - **Dokan_x64.msi** (optional driver for virtual drive features, see below)
 - **readme.txt** (setup instructions)
-
+- **projfs_enable.png** (screenshot of the Windows Feature that needs to be enabled)
 ## Features
 
 - **Dual-channel accelerated transfers** using USB and WiFi simultaneously for up to 2x faster speeds
