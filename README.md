@@ -28,15 +28,26 @@ The release ZIP contains:
 - **MCRAW container support** with ProjFS virtual mount for RAW video files
 - **Single executable** with the Android server binary embedded inside
 
-## Dokan Virtual Drive (Optional)
+Dokan Driver (Required for Virtual Drive)
+To mount your Android device as a drive letter in Windows Explorer,
+install the included Dokan driver:
 
-To mount your Android device as a virtual Windows drive (browse files in Explorer, stream data on demand), install the included Dokan driver:
+1. Run "Dokan_x64.msi" and follow the installer
+2. Restart your computer if prompted
+3. The virtual drive feature will then be available in the app
 
-1. Run **Dokan_x64.msi** from the release ZIP
-2. **Restart your PC** after installation
-3. In the app, go to Connection > Mount as Virtual Drive
+Windows Projected File System (Required)
+The app requires the Windows Projected File System feature to be
+enabled. Without it, the app will not start.
 
-Without Dokan installed, all other features work normally. Only the virtual drive mount requires the Dokan driver.
+To enable it:
+1. Open the Start menu and search for "Turn Windows features on or off"
+2. Scroll down and check "Windows Projected File System"
+3. Click OK and wait for the installation to complete
+4. Restart your computer if prompted
+
+A screenshot (projfs_enable.png) is included in this ZIP showing
+the correct setting to enable.
 
 ## Requirements
 
